@@ -1,0 +1,10 @@
+源代码编译后会形成字节码文件（.class）,可运行在java虚拟机上的java程序
+
+print    println    printf（与c语言大体相同，格式化输出）
+
+块作用域，在嵌套块内，同名变量不能重新定义   但各自独立块中可以
+
+break 标签    goto    continue
+
+不能自行重载运算符
+
