@@ -1,0 +1,12 @@
+/*
+ * @Descripttion: 
+ * @Author: YourSongsAreSoGood
+ * @Date: 2020-07-12 14:36:35
+ * @LastEditors: YourSongsAreSoGood
+ * @LastEditTime: 2020-07-12 14:46:11
+ * @see: https://github.com/Your-songs-are-so-good
+ */ 
+编译：就是将.java 文件翻译成 .class文件
+运行：将.class文件交给JVM运行
+
+8个基本数据类型 byte int short long boolean float double char

@@ -1,0 +1,25 @@
+/*
+ * @Descripttion: 
+ * @Author: YourSongsAreSoGood
+ * @Date: 2020-07-12 14:40:38
+ * @LastEditors: YourSongsAreSoGood
+ * @LastEditTime: 2020-07-12 15:11:17
+ * @see: https://github.com/Your-songs-are-so-good
+ */ 
+数据转换   int+double=double
+强制转换
+ASCII码
+运算符      算术运算符  赋值运算符  比较运算符  逻辑运算符  三元运算符
+
+方法（函数）
+
+JShell脚本：编写代码较少的时候，不愿编写类，main方法采用这个方式    在dos命令行直接输入jShell命令   ，退出  /exit
+
++=符号扩展
+public static void main(String[] args){
+    short s=1;
+    s+=1;
+    System.out.println(s);
+}
+编译没有问题，会执行强制转换
+
