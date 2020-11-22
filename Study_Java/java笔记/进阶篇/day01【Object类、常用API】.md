@@ -76,7 +76,7 @@ public class Person {
 
 在IntelliJ IDEA中，可以点击`Code`菜单中的`Generate...`，也可以使用快捷键`alt+insert`，点击`toString()`选项。选择需要包含的成员变量并确定。如下图所示：
 
-![toString方法的自动重写](img\\toString方法的自动重写.bmp)
+![toString方法的自动重写](img//toString方法的自动重写.bmp)
 
 > 小贴士： 在我们直接使用输出语句输出对象名的时候,其实通过该对象调用了其toString()方法。
 >
@@ -122,11 +122,11 @@ public class Person {
 
 这段代码充分考虑了对象为空、类型一致等问题，但方法内容并不唯一。大多数IDE都可以自动生成equals方法的代码内容。在IntelliJ IDEA中，可以使用`Code`菜单中的`Generate…`选项，也可以使用快捷键`alt+insert`，并选择`equals() and hashCode()`进行自动代码生成。如下图所示：
 
-![](img\\equals方法1.png)
+![](img//equals方法1.png)
 
-![](img\\equals方法2.png)
+![](img//equals方法2.png)
 
-![](img\\equals方法3.png)
+![](img//equals方法3.png)
 
 > tips：Object类当中的hashCode等其他方法，今后学习。
 
@@ -326,7 +326,7 @@ public static void function() throws Exception {
 
 日历我们都见过
 
-![](img\\日历.jpg)
+![](img//日历.jpg)
 
 `java.util.Calendar`是日历类，在Date后出现，替换掉了许多Date的方法。该类将所有可能用到的时间信息封装为静态成员变量，方便获取。日历类就是方便获取各个时间属性的。
 
@@ -544,7 +544,7 @@ public class StringDemo {
 
 根据这句话分析我们的代码，其实总共产生了三个字符串，即`"Hello"`、`"World"`和`"HelloWorld"`。引用变量s首先指向`Hello`对象，最终指向拼接出来的新字符串对象，即`HelloWord` 。
 
-![](img\\String拼接问题.bmp)
+![](img//String拼接问题.bmp)
 
 由此可知，如果对字符串进行拼接操作，每次拼接，都会构建一个新的String对象，既耗时，又浪费空间。为了解决这一问题，可以使用`java.lang.StringBuilder`类。
 
@@ -556,7 +556,7 @@ public class StringDemo {
 
 它的内部拥有一个数组用来存放字符串内容，进行字符串拼接时，直接在数组中加入新内容。StringBuilder会自动维护数组的扩容。原理如下图所示：(默认16字符空间，超过自动扩充)
 
-![06-StringBuilder的原理](img\\06-StringBuilder的原理.png)
+![06-StringBuilder的原理](img//06-StringBuilder的原理.png)
 
 ## 4.3 构造方法
 
