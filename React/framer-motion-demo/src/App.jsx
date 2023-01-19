@@ -1,17 +1,17 @@
 import React from 'react'
-import styled from 'styled-components'
+
+import './assets/styles/reset.css'
+import './assets/styles/global.css'
+
+// import Variants from './examples/Variants'
+import GestureAnimations from './examples/GestureAnimations'
 
 function App() {
-  return <Container></Container>
+  return (
+    <div className="app-contain">
+      <GestureAnimations />
+    </div>
+  )
 }
-
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(0 0 0 / 60%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
 
 export default App
