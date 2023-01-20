@@ -10,11 +10,7 @@ import './assets/styles/reset.css'
 import ExitAnimations from './examples/ExitAnimations'
 
 function App() {
-  return (
-    <div className="app-contain">
-      <ExitAnimations />
-    </div>
-  )
+  return <ExitAnimations />
 }
 
 export default App
