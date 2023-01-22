@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styled from 'styled-components'
+
 import './assets/styles/reset.css'
 
 // import Variants from './examples/Variants'
@@ -7,10 +9,27 @@ import './assets/styles/reset.css'
 // import MotionValues from './examples/MotionValues/MotionValues'
 // import ScrollTriggeredAnimations from './examples/ScrollTriggeredAnimations'
 // import CircleIndicator from './examples/CircleIndicator'
-import ExitAnimations from './examples/ExitAnimations'
+// import ExitAnimations from './examples/ExitAnimations'
+// import LayoutAnimations from './examples/LayoutAnimations'
+// import SharedLayoutAnimations from './examples/SharedLayoutAnimations'
+import ProjectModal from './practice/Project-Modal'
+
+// import UploadBox from './views/UploadBox'
 
 function App() {
-  return <ExitAnimations />
+  return (
+    <AppBody>
+      <ProjectModal />
+    </AppBody>
+  )
 }
+
+const AppBody = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 export default App
