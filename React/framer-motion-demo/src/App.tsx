@@ -12,14 +12,14 @@ import './assets/styles/reset.css'
 // import ExitAnimations from './examples/ExitAnimations'
 // import LayoutAnimations from './examples/LayoutAnimations'
 // import SharedLayoutAnimations from './examples/SharedLayoutAnimations'
-import ProjectModal from './practice/Project-Modal'
+import Modal from './practice/Modal'
 
 // import UploadBox from './views/UploadBox'
 
 function App() {
   return (
     <AppBody>
-      <ProjectModal />
+      <Modal />
     </AppBody>
   )
 }
