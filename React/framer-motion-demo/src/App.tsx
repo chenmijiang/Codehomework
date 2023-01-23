@@ -12,14 +12,15 @@ import './assets/styles/reset.css'
 // import ExitAnimations from './examples/ExitAnimations'
 // import LayoutAnimations from './examples/LayoutAnimations'
 // import SharedLayoutAnimations from './examples/SharedLayoutAnimations'
-import Modal from './practice/Modal'
+// import Modal from './practice/Modal'
+import Slidshow from './practice/Slidshow'
 
 // import UploadBox from './views/UploadBox'
 
 function App() {
   return (
     <AppBody>
-      <Modal />
+      <Slidshow />
     </AppBody>
   )
 }

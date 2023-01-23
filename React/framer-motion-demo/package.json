@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "@types/styled-components": "^5.1.26"
   }
 }
