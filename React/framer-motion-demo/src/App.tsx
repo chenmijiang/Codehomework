@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styled from 'styled-components'
 
@@ -13,14 +13,23 @@ import './assets/styles/reset.css'
 // import LayoutAnimations from './examples/LayoutAnimations'
 // import SharedLayoutAnimations from './examples/SharedLayoutAnimations'
 // import Modal from './practice/Modal'
-import Slidshow from './practice/Slidshow'
+// import Slidshow from './practice/Slidshow'
 
-// import UploadBox from './views/UploadBox'
+import UploadBox from './views/UploadBox'
 
 function App() {
+  const [isShow, showUploadBox] = useState(false)
   return (
     <AppBody>
-      <Slidshow />
+      <button style={{
+        position: 'absolute',
+        top: '10%',
+        left: '50%',
+      }} onClick={() => showUploadBox(!isShow)}>showUploadBox</button>
+      <UploadBox
+        isShow={isShow}
+        showUploadBox={showUploadBox}
+      />
     </AppBody>
   )
 }
@@ -31,6 +40,7 @@ const AppBody = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #62cbcb;
 `
 
 export default App

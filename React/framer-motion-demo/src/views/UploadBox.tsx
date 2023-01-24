@@ -1,30 +1,33 @@
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion, Variants } from 'framer-motion'
 import React from 'react'
 import styled from 'styled-components'
 
-export default function UploadBox() {
+type Props = {
+  isShow: boolean
+  showUploadBox: Function
+}
+
+export default function UploadBox({ isShow, showUploadBox }: Props) {
   return (
-    <BoxContain
-      initial={{
-        opacity: 0,
-        scale: 0,
-      }}
-      animate={{
-        scale: 1,
-        opacity: 1,
-      }}
-      transition={{
-        type: 'spring',
-        duration: 4,
-        bounce: 0.3,
-        damping: 20,
-      }}
-    >
-      <div
-        className="upload_close"
-        onClick={() => {}}
-      ></div>
-      {/* <div className={Style.upload_box_contain}>
+    <AnimatePresence>
+      {isShow && (
+        <BoxContain
+          variants={boxVariants}
+          initial="intial"
+          animate="show"
+          exit="hidden"
+          // transition={{
+          //   type: 'spring',
+          //   duration: 4,
+          //   bounce: 0.3,
+          //   damping: 20,
+          // }}
+        >
+          <div
+            className="upload_close"
+            onClick={() => {}}
+          ></div>
+          {/* <div className={Style.upload_box_contain}>
         <div className={Style.way_change_contain}>
           <div className={[Style.file, Style.music].join(' ')}>
             <div className={Style.music_way}>
@@ -81,8 +84,31 @@ export default function UploadBox() {
           上传
         </button>
       </div> */}
-    </BoxContain>
+        </BoxContain>
+      )}
+    </AnimatePresence>
   )
+}
+
+const boxVariants: Variants = {
+  intial: {
+    opacity: 0,
+    scale: 0.5,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+  },
+  hidden: {
+    opacity: 0,
+    scale: 0.5,
+    transition: {
+      type: 'spring',
+      duration: 4,
+      bounce: 0.3,
+      damping: 20,
+    },
+  },
 }
 
 const BoxContain = styled(motion.div)`
